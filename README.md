@@ -1,5 +1,5 @@
 # degenbanana
-A leveraged yield farming protocol on the Solana blockchain.
+A leveraged meme farming protocol on the Solana blockchain.
 
 [@degenbanana](https://twitter.com/degenbanana)
 
