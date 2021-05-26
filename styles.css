@@ -1,0 +1,155 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #F5AFF5; */
+    scroll-padding-top: 100px;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.logo > * > h1 > span {
+    background: -webkit-linear-gradient(#00FFA3, #DC1FFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+    z-index: 1000;
+    height: 100px;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+}
+
+header > nav > ul {
+    display: flex;
+    align-content: space-between;
+}
+
+.spacer {
+    position: relative; 
+    top: -100px;
+}
+
+body > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo { 
+    /* background-color: rosybrown; */
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    /* display: block; */
+}
+
+/* Centered text */
+.in-1 {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    font-size: 1.5em;
+}
+
+img {
+    max-height: 90vh;
+    max-width: auto;
+
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.container > * > p {
+    font-size: 1.5rem;
+}
+
+.in-2 > p > span {
+    color: blue;
+}
+
+.coins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.coins > img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-height: 169px;
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 500px) {
+    .logo { font-size: 0.7rem; padding-top: 70px; }
+
+    .logo > img {
+        max-height: 430px;
+    }
+    
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .in-3 > p { font-size: 1rem; }
+    .in-2 > p { font-size: 1rem; }
+    .coins > img { max-height: 70px; }
+} 
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .logo { font-size: 0.8rem; padding-top: 120px; }
+}
