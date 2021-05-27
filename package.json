@@ -4,6 +4,9 @@
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2"
   },
+  "scripts": {
+    "compile:css": "postcss src/css/app.css -o public/css/app.css --verbose"
+  },
   "devDependencies": {
     "postcss-cli": "^8.3.1"
   },

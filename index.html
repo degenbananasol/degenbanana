@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/app.css" media="all">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Degenbanana</title>
+</head>
+<body>
+    <div id="root">
+        <header class="h-screen bg-gray-900">
+            <nav class="fixed inset-x-0 top-0 px-4 py-2 bg-gray-800">
+                <div class="container flex items-center justify-between mx-auto">
+                    <a class="flex items-center py-2 text-lg font-bold tracking-wider text-gray-100 brand md:text-xl md:px-2" href="/">
+                        Degen<span class="text-yellow-300">banana</span>
+                    </a>
+                    <div class="flex items-center">
+                        <a class="inline-block mr-4 text-blue-200 twitter" target="_blank" href="https://twitter.com/degenbanana">
+                            <svg class="w-6 h-auto fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        </a>
+
+                        <a class="inline-block mr-4 text-purple-300 discord" target="_blank" href="https://discord.gg/z2pMNqTq">
+                            <svg class="w-6 h-auto fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+                        </a>
+
+                        <a class="text-blue-300 telegram" href="http://t.me/DegenBanana101" target="_blank">
+                            <svg class="h-auto fill-current w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container flex flex-col-reverse justify-center h-screen px-4 mx-auto text-gray-200 hero md:flex-row md:justify-start md:items-center ">
+                <div class="w-full md:w-6/12">
+                    <h2 class="text-3xl font-bold leading-tight md:text-6xl">Leveraged memeing on the <span class="text-color-solana">Solana</span> blockchain.</h2>
+                    <p class="text-base md:text-2xl">
+                    A user experience for chimps and apes alike.
+                    </p>
+                </div>
+                <div class="w-10/12 md:w-6/12">
+                    <img class="banner" src="public/images/banner.svg" alt="DegenBanana">
+                </div>
+            </div>
+        </header>
+        <section class="bg-gray-800 advantages md:h-screen">
+            <div class="px-4 py-24 mx-auto max-w-screen-md">
+                <h2 class="text-3xl font-bold text-center text-gray-200">Our Advantages</h2>
+                <p class="text-lg text-center text-gray-200">
+                We've taken care of the hard work, so you can enjoy the highest protein bananas.
+                </p>
+                <div class="py-4 text-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        Deposit any banana, farm any meme.
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        Integrated with the best fake protocols to leverage your vapor.
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        Opt-in insurance against impermanent reality, and hedging against base banana exposure.
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        One peel user experience.
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        Automatic rebalancing to prevent getting squished (soon).
+                    </div>
+
+                    <div class="flex items-center justify-center p-4 text-xl font-bold text-center bg-gray-900 border-4 border-yellow-200 rounded-lg">
+                        Native cross-chain fruit salad (soon).
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facts">
+            <div class="flex items-center justify-center px-4 py-10 bg-yellow-300">
+                <div class="mx-auto max-w-screen-md">
+                    <h3 class="text-xl font-bold text-gray-900 md:text-3xl">
+                        We're a team of fake engineers, designers, and product managers.
+                    </h3>
+                </div>
+            </div>
+            <div class="flex items-center justify-center px-4 py-10 bg-yellow-200">
+                <div class="mx-auto max-w-screen-md">
+                    <h3 class="text-xl font-bold text-gray-800 md:text-3xl">
+                        We haven't worked at top Silicon Valley tech firms such as Google, Twitter, Uber, and Airbnb.
+                    </h3>
+                </div>
+            </div>
+            <div class="flex items-center justify-center px-4 py-10 bg-yellow-100">
+                <div class="mx-auto max-w-screen-md">
+                    <h3 class="text-xl font-bold text-gray-800 md:text-3xl">
+                        It's time to LARP a humble contribution to the DeFi ecosystem, and we've pretended to team up with engineers from Compound and Synthetix to help us do nothing.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <footer class="p-12 text-center bg-yellow-50">
+            <p class="text-gray-500">
+            So, is something happening? Good question. Have faith. But just a little.
+            </p>
+            <p class="font-medium text-gray-800">Degenbanana &copy; 2021</p>
+        </footer>
+    </div>
+</body>
+</html>
