@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.1"
+  },
+  "name": "degenbanana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nurofsun/degenbanana",
+  "author": "nurofsun <dev.nurahmat@gmail.com>",
+  "license": "MIT"
+}
