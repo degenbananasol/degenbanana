@@ -6,7 +6,7 @@ body {
     scroll-behavior: smooth;
     margin: 0%;
     padding: 0%;
-    /* background-color: #F5AFF5; */
+    background-color: #FFC6FD;
     scroll-padding-top: 100px;
    
 }
@@ -115,12 +115,16 @@ ul {
     align-items: center;
     overflow: hidden;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .coins > img {
+    margin: 25px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    max-height: 169px;
+    border-width: 10px; 
+    max-height: 120px;
+    max-width: 120px;
 }
 
 footer {
@@ -147,9 +151,10 @@ footer {
 
     .in-3 > p { font-size: 1rem; }
     .in-2 > p { font-size: 1rem; }
-    .coins > img { max-height: 70px; }
+    .coins > img { max-height: 70px; border-width: 2px;  margin: 10px;}
 } 
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .logo { font-size: 0.8rem; padding-top: 120px; }
+    .coins > img { max-height: 90px; border-width: 2px;  margin: 15px;}
 }
