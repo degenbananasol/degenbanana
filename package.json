@@ -8,6 +8,7 @@
     "compile:css": "postcss src/css/app.css -o public/css/app.css --verbose"
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "postcss-cli": "^8.3.1"
   },
   "name": "degenbanana",

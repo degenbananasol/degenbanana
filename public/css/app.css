@@ -332,7 +332,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Open Sans, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -550,11 +550,6 @@ video {
   }
 }
 
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
-}
-
 .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
@@ -580,6 +575,11 @@ video {
   background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
 }
 
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+}
+
 .bg-pink-300 {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
@@ -590,12 +590,21 @@ video {
   border-color: rgba(191, 219, 254, var(--tw-border-opacity));
 }
 
+.border-pink-600 {
+  --tw-border-opacity: 1;
+  border-color: rgba(219, 39, 119, var(--tw-border-opacity));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .inline-block {
@@ -636,6 +645,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .h-auto {
@@ -775,24 +788,19 @@ video {
   color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
-.text-yellow-300 {
+.text-blue-500 {
   --tw-text-opacity: 1;
-  color: rgba(252, 211, 77, var(--tw-text-opacity));
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
 
-.text-blue-200 {
+.text-blue-600 {
   --tw-text-opacity: 1;
-  color: rgba(191, 219, 254, var(--tw-text-opacity));
+  color: rgba(37, 99, 235, var(--tw-text-opacity));
 }
 
-.text-blue-300 {
+.text-purple-500 {
   --tw-text-opacity: 1;
-  color: rgba(147, 197, 253, var(--tw-text-opacity));
-}
-
-.text-purple-300 {
-  --tw-text-opacity: 1;
-  color: rgba(196, 181, 253, var(--tw-text-opacity));
+  color: rgba(139, 92, 246, var(--tw-text-opacity));
 }
 
 .tracking-wider {
@@ -805,6 +813,10 @@ video {
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-10\/12 {
@@ -988,6 +1000,10 @@ video {
   .md\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:w-6\/12 {
