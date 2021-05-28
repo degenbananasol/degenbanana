@@ -815,6 +815,10 @@ video {
   width: 100%;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -895,6 +899,41 @@ video {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+  -webkit-text-stroke: 3px solid #323232;
+  text-stroke: 3px solid #323232;
+}
+
+@-webkit-keyframes banana-updown {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes banana-updown {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.banana-animate {
+  -webkit-animation-name: banana-updown;
+          animation-name: banana-updown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 @media (min-width: 640px) {
@@ -937,8 +976,8 @@ video {
     line-height: 2.5rem;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 

@@ -7,4 +7,22 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+  -webkit-text-stroke: 3px solid #323232;
+  text-stroke: 3px solid #323232;
+}
+
+@keyframes banana-updown {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+.banana-animate {
+  animation-name: banana-updown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
