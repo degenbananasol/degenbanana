@@ -37,9 +37,15 @@ header {
     margin: 0%;
 }
 
-header > nav > ul {
+header > nav {
     display: flex;
-    align-content: space-between;
+    justify-content: space-around;
+}
+
+.socials {
+    width: 30vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 .spacer {
@@ -74,7 +80,8 @@ body > .logo {
     font-size: 1.5em;
 }
 
-img {
+/* from img to class names */
+.banana, .dancing-banana {
     max-height: 90vh;
     max-width: auto;
 
@@ -152,9 +159,16 @@ footer {
     .in-3 > p { font-size: 1rem; }
     .in-2 > p { font-size: 1rem; }
     .coins > img { max-height: 70px; border-width: 2px;  margin: 10px;}
+
+
+    header {  padding-left: 0%; padding-right: 0%;}
+    nav {flex-direction: column; justify-content: center; align-items: center;}
+    nav > .title {text-align: center;}
+    nav > .socials {justify-self: center; align-self: center; width: 30vh; justify-content: space-evenly;}
 } 
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .logo { font-size: 0.8rem; padding-top: 120px; }
     .coins > img { max-height: 90px; border-width: 2px;  margin: 15px;}
+    .socials {width: 20vh;}
 }
