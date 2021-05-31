@@ -10,8 +10,6 @@ h2 {
 }
 
 html {
-  height: 100vh;
-  overflow: hidden;
   font-size: 16px;
 }
 
@@ -76,12 +74,10 @@ li::before {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.0625rem;
-  font-size: 15px !important;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2.125px;
-  line-height: 1.6;
-  margin-right: 0.5rem !important;
+  line-height: 1.6
   margin-top: 0.5rem !important;
   padding: 0.8125rem 1.25rem;
   text-align: center;
@@ -118,6 +114,7 @@ header {
   background-color: transparent;
   padding: 0.5rem 0;
   margin: 0;
+  transition: background-color 0.15s ease-in-out;
 }
 
 header > nav {
@@ -192,6 +189,10 @@ header.bg-active {
   box-sizing: border-box;
 }
 
+.in-1 h1 {
+  font-size: 1.75rem;
+}
+
 .logo {
   height: 100vh;
   width: 100vw;
@@ -212,8 +213,8 @@ header.bg-active {
 }
 
 .banana {
-  padding-top: 0.75rem;
-  max-height: 430px;
+  padding-top: 5.75rem;
+  max-height: 384px;
   max-width: auto;
   -webkit-animation: spin 10s linear infinite;
   animation: spin 10s linear infinite;
@@ -282,9 +283,26 @@ footer {
   line-height: 1.5;
 }
 
-/* Desktop Viewport */
+/* Tablet Viewport */
 
 @media only screen and (min-width: 768px) {
+  .in-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .banana {
+    padding-top: 0.75rem;
+    max-height: 430px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Viewport */
+
+@media only screen and (min-width: 1024px) {
   .in-1 {
     top: 50%;
     left: 50%;
@@ -292,6 +310,10 @@ footer {
     max-width: 100%;
     font-size: 1.5rem;
     padding: 1rem;
+  }
+
+  .in-1 h1 {
+    font-size: 3rem;
   }
 
   .banana {

@@ -111,34 +111,19 @@
         </p>
       </footer>
     </main>
-    <script>
-      var lastKnownScrollPosition = 0;
-      var ticking = false;
-      var isShowBackground = false;
+    <script type="text/javascript">
+      window.onscroll = function () {
+        toggleHeaderBackground();
+      };
 
       function toggleHeaderBackground() {
-        if (isShowBackground) {
-          document.querySelector("header").classList.remove("bg-active");
-        } else {
+        console.log(document.documentElement.scrollTop);
+        if (document.body.scrollTop > 24 || document.documentElement.scrollTop > 24) {
           document.querySelector("header").classList.add("bg-active");
+        } else {
+          document.querySelector("header").classList.remove("bg-active");
         }
       }
-
-      document.addEventListener("scroll", function (e) {
-        lastKnownScrollPosition = window.scrollY;
-
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            console.log(lastKnownScrollPosition);
-            if (lastKnownScrollPosition > 1) {
-              toggleHeaderBackground();
-            }
-            ticking = false;
-          });
-
-          ticking = true;
-        }
-      });
     </script>
   </body>
 </html>
